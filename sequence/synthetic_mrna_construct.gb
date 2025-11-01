@@ -1,0 +1,39 @@
+LOCUS       syn_mRNA_construct    383 bp    DNA     linear   SYN 27-SEP-2025
+DEFINITION  Synthetic mRNA construct with 5'UTR (Kozak), reporter CDS, 3'UTR, and poly(A) tail.
+ACCESSION   XXXXXXXX
+VERSION     XXXXXXXX.1
+KEYWORDS    synthetic construct; mRNA; Kozak; polyA.
+SOURCE      synthetic DNA construct
+  ORGANISM  synthetic construct
+            artificial sequence
+
+FEATURES             Location/Qualifiers
+     source          1..383
+                     /organism="synthetic construct"
+                     /mol_type="other DNA"
+     5'UTR           1..29
+                     /note="5' UTR with Kozak consensus"
+     misc_feature    24..29
+                     /note="Kozak consensus (GCCACC) immediately upstream of start codon"
+     CDS             30..200
+                     /gene="synReporter"
+                     /product="synthetic reporter peptide"
+                     /codon_start=1
+                     /translation="MVVVVVVAAAAAASSSSSSTTTTTTGGGGGGKKKKKEEEEEDDDDDHHHHHNNNNN"
+     3'UTR           201..263
+                     /note="3' UTR containing polyA signal"
+     regulatory      237..242
+                     /regulatory_class="polyA_signal_sequence"
+     polyA_site      264
+     polyA_signal    237..242
+     polyA_tail      264..383
+BASE COUNT      182 a        59 c        69 g        73 t
+ORIGIN
+        1 ggaagttcgt cgctgctgct gctgccacca tggtggtggt ggtggtggtg gctgctgctg
+       61 ctgctgcttc ttcttcttct tcttctacta ctactactac tactggtggt ggtggtggtg
+      121 gtaaaaaaaa aaaaaaagaa gaagaagaag aagatgatga tgatgatcat catcatcatc
+      181 ataataataa taataattaa gctgctgctg ctgctgctgc tgctgctgct gctgctaata
+      241 aagccgccgc cgccgccgcc gccaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa
+      301 aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa aaaaaaaaaa
+      361 aaaaaaaaaa aaaaaaaaaa aaa
+//

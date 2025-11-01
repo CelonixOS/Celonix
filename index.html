@@ -1,0 +1,770 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <!-- Intro.js Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/minified/introjs.min.css">
+    <title>
+        Starter
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" crossorigin src="/assets/index-BYZ6f2yk.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-B396p3wV.css">
+</head>
+<body >
+
+<!-- Mobile Warning Screen -->
+<div id="mobile-warning">
+    <div class="mobile-warning-content">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+        </svg>
+        <h1>Not Available for Mobile Phones</h1>
+        <p>This research platform is optimized for tablets and desktop computers.</p>
+        <p>Please access this application from a device with a larger screen for the best experience.</p>
+        <div class="recommended-devices">
+            <span>💻 Desktop</span>
+            <span>📱 Tablet</span>
+        </div>
+    </div>
+</div>
+
+<div id="Topbar">
+    <div id="Navigator-Icon">
+        <i class="Top-Icon bi-house-fill"></i>
+    </div>
+    <div id="Logo">
+    <img src="./logo/Celonix_Logo.png" alt="Celonix Logo" >
+    </div>
+    <div id="Account-Icon">
+        <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-person-check" viewBox="0 0 16 16">
+            <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+            <path d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z"/>
+        </svg>
+    </div>
+</div>
+
+<!-- Collaboration Panel -->
+<div id="collaboration-panel">
+    <div class="collab-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+        </svg>
+        <span>Active Researchers</span>
+        <span class="user-count">4</span>
+    </div>
+    <div class="users-list">
+        <div class="user-item" data-user="1">
+            <div class="user-avatar">R1</div>
+            <div class="user-info">
+                <div class="user-name">@Researcher_1</div>
+                <div class="user-status">Viewing 2D Images</div>
+            </div>
+            <div class="status-indicator online"></div>
+        </div>
+        <div class="user-item" data-user="2">
+            <div class="user-avatar">R2</div>
+            <div class="user-info">
+                <div class="user-name">@Researcher_2</div>
+                <div class="user-status">Analyzing Sequences</div>
+            </div>
+            <div class="status-indicator online"></div>
+        </div>
+        <div class="user-item" data-user="3">
+            <div class="user-avatar">R3</div>
+            <div class="user-info">
+                <div class="user-name">@Researcher_3</div>
+                <div class="user-status">Idle</div>
+            </div>
+            <div class="status-indicator away"></div>
+        </div>
+        <div class="user-item" data-user="4">
+            <div class="user-avatar">R4</div>
+            <div class="user-info">
+                <div class="user-name">@Researcher_4</div>
+                <div class="user-status">Editing Notebook</div>
+            </div>
+            <div class="status-indicator online"></div>
+        </div>
+    </div>
+</div>
+
+<div class="MainMenu-Wrapper">
+<div class="Main-Menu" id="Menu1" >
+    <div class="Main-Templates" name="0">
+        <div class="Main-Icon" name="0">
+        <i class="Mainpage-Icon bi-bounding-box-circles" name="0"></i>
+        <div class="Icon-Name" name="0">Molecular Structures</div>
+        </div>
+    </div>
+    <div class="Main-Templates" name="1">
+        <div class="Main-Icon" name="1">
+        <i class="Mainpage-Icon bi-journal-text" name="1"></i>
+        <div class="Icon-Name" name="1">Lab Notebook</div>
+        </div>
+    </div>
+    <div class="Main-Templates" name="2">
+        <div class="Main-Icon" name="2">
+        <i class="Mainpage-Icon bi-aspect-ratio" name="2"></i>
+        <div class="Icon-Name" name="2">Imaging & Microscopy</div>
+        </div>
+    </div>
+</div>
+<div class="Main-Menu" id="Menu2">
+    <div class="Main-Templates" name="3">
+        <div class="Main-Icon" name="3">
+       <i class="Mainpage-Icon bi-list-columns" name="3"></i>
+        <div class="Icon-Name" name="3">Sequence Explorer</div>
+        </div>
+    </div>
+    <div class="Main-Templates" name="4">
+        <div class="Main-Icon" name="4">
+        <i class="Mainpage-Icon bi-graph-up" name="4"></i>
+        <div class="Icon-Name" name="4">Data Series</div>
+        </div>
+    </div>
+    <div class="Main-Templates" name="5">
+        <div class="Main-Icon" name="5">
+        <i class="Mainpage-Icon bi-transparency" name="5"></i>
+        <div class="Icon-Name" name="5">Omics-Viewer</div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- ######################### -->
+ <!-- 2D Viewer -->
+<!-- ######################### -->
+
+<div id="Container-2DViewer">
+    <div id="Editor-2DViewer">
+        <div class="Close-Editor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </div>
+    </div>
+
+    <div class="DragDrop-Field">
+        <div class="DragDrop-Icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8vh" height="8vh" fill="currentColor" class="bi bi-cloud-upload" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383"/>
+                <path fill-rule="evenodd" d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V14.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708z"/>
+            </svg>
+
+        </div>
+        <div class="DragDrop-Label">
+            Upload File
+        </div>
+    </div>
+    <div>
+         <button class="editor-button">
+        <svg class="editor-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/>
+        </svg>
+        <span>Editor</span>
+        </button>
+    </div>
+    <div id="Wrapper-2DViewer">
+        <div id="Field-2DViewer">
+
+        </div>
+        <div id="Zoom-Display">100%</div>
+    </div>
+
+    <div id="Sidebar-2DViewer"></div>
+    <div id="Metadata-2DViewer"></div>
+    <div class="Wrapper-ZoomSlider">
+        <input type="range" id="Zoom-Slider" min="100" max="130" value="100" step="1">
+        <label for="Zoom-Slider" id="Zoom-Label">100%</label>
+    </div>
+    <div class="Wrapper-ChannelSelect">
+        <label for="channel-select" id="channel-label">Kanal:</label>
+        <select id="channel-select">
+            <option value="rgb">RGB</option>
+            <option value="r">Rot</option>
+            <option value="g">Grün</option>
+            <option value="b">Blau</option>
+            <option value="gray">Graustufen</option>
+        </select>
+    </div>
+    <!-- Annotation Toolbar -->
+    <div class="annotation-toolbar">
+        <button class="tool-btn" data-tool="rectangle" title="Rechteck">
+            ⬛
+        </button>
+        <button class="tool-btn" data-tool="circle" title="Kreis">
+            ⚪
+        </button>
+        <button class="tool-btn" data-tool="freehand" title="Freihand">
+            ✍️
+    </button>
+    <button class="tool-btn" data-tool="tooltip" title="Tooltip">
+            📍
+    </button>
+    </div>
+    <div id="Note-Field">
+        <div id="note-book-2d" contenteditable="true">
+            Note here..
+        </div>
+    </div>
+     <div id="Toolbar-2DViewer">
+        <div class="Tools-2DViewer">
+            <div class="ToolIcon-2DViewer">
+                <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-rulers" viewBox="0 0 16 16">
+                    <path d="M1 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h5v-1H2v-1h4v-1H4v-1h2v-1H2v-1h4V9H4V8h2V7H2V6h4V2h1v4h1V4h1v2h1V2h1v4h1V4h1v2h1V2h1v4h1V1a1 1 0 0 0-1-1z"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="Tools-2DViewer">
+            <div class="ToolIcon-2DViewer">
+                <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-camera" viewBox="0 0 16 16">
+                    <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"/>
+                    <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ############################ -->
+<!-- 3D Viewer  -->
+ <!-- ########################### -->
+<div id="Container-3DViewer" >
+    <div id="viewer3D"></div>
+    <div id="webgl"></div>
+    <div class="DragDrop-Field">
+        <div class="DragDrop-Icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8vh" height="8vh" fill="currentColor" class="bi bi-cloud-upload" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383"/>
+                <path fill-rule="evenodd" d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V14.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708z"/>
+            </svg>
+
+        </div>
+        <div class="DragDrop-Label">
+            Upload File
+        </div>
+    </div>
+     <div>
+         <button class="editor-button">
+        <svg class="editor-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/>
+        </svg>
+        <span>Editor</span>
+        </button>
+     </div>
+    <div class="Wrapper-ChannelSelect3D">
+        <label for="style-select" id="channel-label">Darstellung:</label>
+        <select id="style-select">
+            <option value="default" selected>Standard</option>
+            <option value="stick">Stick</option>
+            <option value="sphere">Sphere</option>
+            <option value="cartoon">Cartoon</option>
+            <option value="ribbon">Ribbon</option>
+        </select>
+    </div>
+     <div class="Close-Editor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+    </div>
+     <div id="Note-Field3D">
+        <div id="note-book-3d" contenteditable="true">
+            Note here..
+        </div>
+    </div>
+    <div id="Sidebar-3DViewer"></div>
+      <div id="Toolbar-3DViewer">
+        <div class="Tools-3DViewer">
+            <div class="ToolIcon-3DViewer">
+                <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-camera" viewBox="0 0 16 16">
+                    <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"/>
+                    <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                </svg>
+            </div>
+        </div>
+        <div class="Tools-3DViewer">
+            <div class="ToolIcon-3DViewer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-copy" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ############################# -->
+<!-- Sequence Explorer -->
+<!-- ######################### -->
+
+<div id="Container-Sequence">
+    <div id="Editor-Sequence">
+        <div class="Close-Editor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </div>
+    </div>
+
+    <div class="DragDrop-Field">
+        <div class="DragDrop-Icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8vh" height="8vh" fill="currentColor" class="bi bi-cloud-upload" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383"/>
+                <path fill-rule="evenodd" d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V14.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708z"/>
+            </svg>
+
+        </div>
+        <div class="DragDrop-Label">
+            Upload File 
+        </div>
+    </div>
+    <div>
+         <button class="editor-button">
+        <svg class="editor-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/>
+        </svg>
+        <span>Editor</span>
+        </button>
+    </div>
+    <div id="Wrapper-Sequence">
+        <div id="Field-Sequence">
+        </div>
+        <div id="Zoom-Display">100%</div>
+    </div>
+
+    <div id="Structure-3D">
+        <div id="viewer3D-container"></div>
+    </div>
+
+
+    <div id="Sidebar-Sequence"></div>
+    <div id="Metadata-Sequence"></div>
+
+    <div class="zoom-controls">
+        <button id="zoom-out">-</button>
+        <span id="zoom-display">100%</span>
+        <button id="zoom-in">+</button>
+    </div>
+
+    <div class="search-controls">
+        <input type="text" id="search-input" placeholder="Motiv suchen (z.B. ATG)">
+        <button id="search-btn">Search</button>
+        <button id="search-prev">←</button>
+        <button id="search-next">→</button>
+        <span id="search-status"></span>
+    </div>
+    <div id="Note-FieldSequence">
+        <div class="sequence-editor-header">
+            <h3>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                </svg>
+                Sequence Viewer
+            </h3>
+        </div>
+        <div id="sequence-viewer-text"></div>
+    </div>
+</div>
+
+</div>
+<!-- ############################# -->
+<!-- Measurement Data -->
+ <!-- ############################ -->
+<div id="Container-Meas">
+    <div id="viewerMeas"></div>
+    <div class="DragDrop-Field">
+        <div class="DragDrop-Icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8vh" height="8vh" fill="currentColor" class="bi bi-cloud-upload" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383"/>
+                <path fill-rule="evenodd" d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V14.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708z"/>
+            </svg>
+
+        </div>
+        <div class="DragDrop-Label">
+            Upload File
+        </div>
+    </div>
+    <div id="dicomViewe" class="chart-container"></div>
+    <div id="Sidebar-Measurements" class="sidebar-block"></div>
+
+    <div class="Close-Editor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-x-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+        </svg>
+    </div>
+    <div>
+         <button class="editor-button">
+        <svg class="editor-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/>
+        </svg>
+        <span>Editor</span>
+        </button>
+     </div>
+    <div id="Tools-Meas">
+        <div id="column-mapping" class="mapping-container" style="margin-top: 1rem; display: none;">
+        <h3>Column Mapping</h3>
+        <form id="mapping-form">
+            <div id="column-dropdowns"></div>
+            <button type="submit">Confirm</button>
+        </form>
+        </div>
+        <div id="Note-FieldMeas">
+            <div id="note-book-meas" contenteditable="true">
+                Note here..
+            </div>
+        </div>
+    </div>
+    <div id="Sidebar-Meas"></div>
+      <div id="Toolbar-Meas">
+        <div class="Tools-Meas">
+            <div class="ToolIcon-Meas">
+                <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-camera" viewBox="0 0 16 16">
+                    <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"/>
+                    <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                </svg>
+            </div>
+        </div>
+        <div class="Tools-Meas">
+            <div class="ToolIcon-Meas">
+                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-copy" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ############################# -->
+<!-- Omics Viewer -->
+<!-- ############################# -->
+<!-- Omics Viewer -->
+ <!-- ############################ -->
+<div id="Container-Omics">
+    <div id="viewerOmics"></div>
+    <div class="DragDrop-Field">
+        <div class="DragDrop-Icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8vh" height="8vh" fill="currentColor" class="bi bi-cloud-upload" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383"/>
+                <path fill-rule="evenodd" d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V14.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708z"/>
+            </svg>
+
+        </div>
+        <div class="DragDrop-Label">
+            Upload File
+        </div>
+    </div>
+    <div id="Sidebar-Omics"></div>
+
+    <div class="Close-Editor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-x-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+        </svg>
+    </div>
+    <div>
+         <button class="editor-button">
+        <svg class="editor-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/>
+        </svg>
+        <span>Editor</span>
+        </button>
+     </div>
+    <div id="Note-FieldOmics">
+        <div id="note-book-omics" contenteditable="true">
+            Note here..
+        </div>
+    </div>
+    <div id="Toolbar-Omics"></div>
+</div>
+<!-- ############################### -->
+ <!-- Collboration Container -->
+<!-- ############################### -->
+ <div id="Container-Collab" style="display: none;">
+      <!-- Sidebar Toggle Button (visible on tablets) -->
+      <button class="sidebar-toggle" id="sidebar-toggle-btn" aria-label="Toggle Sidebar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      
+      <!-- Sidebar Overlay (for tablet) -->
+      <div class="sidebar-overlay" id="sidebar-overlay"></div>
+      
+      <aside id="Sidebar-Collab"></aside>
+
+      <!-- Breadcrumb Navigation -->
+      <nav id="Breadcrumbs-Collab" aria-label="Breadcrumb">
+        <a href="#" class="breadcrumb-item" data-page="home">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Home
+        </a>
+        <span class="breadcrumb-separator">›</span>
+        <a href="#" class="breadcrumb-item" data-page="research">Research</a>
+        <span class="breadcrumb-separator">›</span>
+        <a href="#" class="breadcrumb-item" data-page="projects">Projects</a>
+        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-item active">Current Document</span>
+      </nav>
+
+      <header id="Toolbar-Collab" role="toolbar" aria-label="Editor-Werkzeuge">
+        <!-- Font size dropdown -->
+        <div class="tool">
+          <label class="sr-only" for="font-size-select">Schriftgröße</label>
+          <select id="font-size-select" aria-label="Schriftgröße">
+            <option value="12px">12</option>
+            <option value="14px">14</option>
+            <option value="16px" selected>16</option>
+            <option value="18px">18</option>
+            <option value="24px">24</option>
+          </select>
+        </div>
+
+        <button id="btn-bold" class="tool" type="button" aria-label="Fett" title="Fett (Strg/Cmd+B)" aria-pressed="false"><strong>B</strong></button>
+        <button id="btn-italic" class="tool" type="button" aria-label="Kursiv" title="Kursiv (Strg/Cmd+I)" aria-pressed="false"><em>I</em></button>
+        <button id="btn-strike" class="tool" type="button" aria-label="Durchgestrichen" title="Durchgestrichen" aria-pressed="false"><s>S</s></button>
+        <button id="btn-list" class="tool" type="button" aria-label="Aufzählungsliste" title="Aufzählungsliste" aria-pressed="false">• List</button>
+        
+        <!-- Tabellen-Button -->
+        <button id="btn-table" class="tool" type="button" aria-label="Tabelle einfügen" title="Tabelle einfügen">▦</button>
+
+        <div class="divider" aria-hidden="true"></div>
+
+        <button id="btn-undo" class="tool" type="button" aria-label="Rückgängig" title="Rückgängig (Strg/Cmd+Z)">↺</button>
+        <button id="btn-redo" class="tool" type="button" aria-label="Wiederholen" title="Wiederholen (Strg/Cmd+Y oder Shift+Z)">↻</button>
+
+        <!-- Tabellen-Popover -->
+        <div id="table-popover" class="popover" role="dialog" aria-modal="false" aria-labelledby="table-popover-title">
+          <div class="popover-content">
+            <div class="popover-header" id="table-popover-title">Tabelle einfügen</div>
+            <div class="popover-row">
+              <label for="table-rows">Zeilen</label>
+              <input id="table-rows" type="number" min="1" max="50" value="2" />
+            </div>
+            <div class="popover-row">
+              <label for="table-cols">Spalten</label>
+              <input id="table-cols" type="number" min="1" max="20" value="2" />
+            </div>
+            <div class="popover-actions">
+              <button id="table-create" class="tool" type="button">Einfügen</button>
+              <button id="table-cancel" class="tool" type="button">Abbrechen</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main id="Page-Collab">
+        <!-- Page Header with Status -->
+        <div class="page-header-modern">
+          <div class="page-title-row">
+            <input type="text" class="page-title-input" placeholder="Untitled Document" value="Research Protocol - Phase 2" />
+            <span class="page-status-badge published">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Published
+            </span>
+          </div>
+          <div class="page-meta-row">
+            <div class="page-meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Last edited 2 hours ago
+            </div>
+            <div class="page-meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Created by @Researcher_1
+            </div>
+            <div class="page-collaborators">
+              <div class="collaborator-avatar" title="@Researcher_1">R1</div>
+              <div class="collaborator-avatar" title="@Researcher_2" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">R2</div>
+              <div class="collaborator-avatar" title="@Researcher_3" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">R3</div>
+            </div>
+            <div class="page-actions">
+              <button class="page-action-btn secondary" title="Share">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                Share
+              </button>
+              <button class="page-action-btn primary" title="Save">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="page-content-area" contenteditable="true" data-placeholder="Tippe, um zu beginnen…">
+          <h1>Research Protocol - Phase 2</h1>
+          <p>This document outlines the experimental procedures and data collection methods for Phase 2 of our collaborative research project.</p>
+        </div>
+
+        <div id="viewer-modal" aria-hidden="true">
+        <div class="viewer-backdrop"></div>
+        <div class="viewer-dialog" role="dialog" aria-modal="true" aria-labelledby="viewer-title">
+            <header class="viewer-header">
+            <h3 id="viewer-title">Vorschau</h3>
+            <button id="viewer-close" class="tool" type="button" aria-label="Schließen">✕</button>
+            </header>
+            <div id="viewer-content" class="viewer-content"></div>
+        </div>
+        </div>
+      </main>
+    </div>
+
+
+
+
+
+ <div id="Conatiner-Collab1" style="display: none;">
+    <div class="editor-toolbar">
+  <div class="toolbar-group">
+    <select class="format-dropdown" title="Text format">
+      <option value="p">Paragraph</option>
+      <option value="h1">Heading 1</option>
+      <option value="h2">Heading 2</option>
+      <option value="h3">Heading 3</option>
+      <option value="h4">Heading 4</option>
+      <option value="h5">Heading 5</option>
+      <option value="h6">Heading 6</option>
+      <option value="blockquote">Quote</option>
+      <option value="code">Code block</option>
+    </select>
+    <button id="btn-bold" title="Bold"><b>B</b></button>
+    <button id="btn-italic" title="Italic"><i>I</i></button>
+    <button id="btn-underline" title="Underline"><u>U</u></button>
+    <button id="btn-strike" title="Strikethrough"><s>S</s></button>
+    <button id="colorBtn" title="Text color">🎨</button>
+    <button title="Highlight">🖍️</button>
+    <button id="tableBtn" title="Insert table">📊</button>
+    <button id="emojiBtn" title="Insert emoji">😊</button>
+    <button title="Mention user">@</button>
+    <button class="save-button" title="Save document">💾 Save</button>
+  </div>
+</div>
+
+
+<div id="editor-container">
+  <div class="editor-area"></div>
+   <div class="editor-preview"></div>
+</div>
+ </div>
+
+
+<!--=========================================WEBGL===========================================================-->
+
+<!--=======================================Libaries-JAVASCRIPT======================================================================-->
+<div id="viewerRoot">
+    <div id="Back-Arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+            <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+        </svg>
+    </div>
+    <div id="Forward-Arrow">
+        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+            <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
+        </svg>
+    </div>
+    <div id="Icon-Size">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrows-angle-expand" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
+        </svg>`;
+    </div>
+    <div id="dicomViewer">
+
+    </div>
+</div>
+<div id="vtkContainer" style="width: 800px; height: 600px; display: none;"></div>
+<div id="Sidebar">
+    <div id="View-Icon">
+    <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-badge-3d" viewBox="0 0 16 16">
+        <path d="M4.52 8.368h.664c.646 0 1.055.378 1.06.9.008.537-.427.919-1.086.919-.598-.004-1.037-.325-1.068-.756H3c.03.914.791 1.688 2.153 1.688 1.24 0 2.285-.66 2.272-1.798-.013-.953-.747-1.38-1.292-1.432v-.062c.44-.07 1.125-.527 1.108-1.375-.013-.906-.8-1.57-2.053-1.565-1.31.005-2.043.734-2.074 1.67h1.103c.022-.391.383-.751.936-.751.532 0 .928.33.928.813.004.479-.383.835-.928.835h-.632v.914zm3.606-3.367V11h2.189C12.125 11 13 9.893 13 7.985c0-1.894-.861-2.984-2.685-2.984zm1.187.967h.844c1.112 0 1.621.686 1.621 2.04 0 1.353-.505 2.02-1.621 2.02h-.844z"/>
+        <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+      </svg>
+    <div class="Icon-Name">View</div>
+</div>
+<div id="Tool-Icon">
+    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="Tool-Icon">
+        <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"></path>
+    </svg>
+    <div class="Icon-Name">Tools</div>
+</div>
+<div id="Colla-Icon" >
+    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="Colla-Icon">
+        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"></path>
+        <path d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"></path>
+    </svg>
+    <div class="Icon-Name">Collaboration</div>
+</div>
+<div id="Data-Icon">
+    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="Data-Icon" >
+        <path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5z"></path>
+        <path d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z"></path>
+        <path d="M10 7a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm4-3a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1"></path>
+    </svg>
+    <div class="Icon-Name" >Daten</div>
+</div>
+</div>
+
+<!-- dicom-sidebar.html -->
+ <div id="tree-container">
+    <div id="dicomSidebar">
+        <div class="dicom-sidebar">
+          <div class="sidebar-header">
+            <h3>Patientenakte</h3>
+            <input type="text" class="sidebar-search" placeholder="suchen …" />
+          </div>
+          <div class="sidebar-body" id="sidebar-body">
+            <!-- Satz 1 -->
+            <h4 class="folder-heading"></h4>
+            <div class="folder-image loading" style="position:relative" name="0"></div>
+      
+            <!-- Satz 2 -->
+            <h4 class="folder-heading"></h4>
+            <div class="folder-image loading" style="position:relative" name="1"></div>
+      
+            <!-- Satz 3 -->
+            <h4 class="folder-heading"></h4>
+            <div class="folder-image loading" style="position:relative" name="2"></div>
+      
+            <!-- Satz 4 -->
+            <h4 class="folder-heading"></h4>
+            <div class="folder-image loading" style="position:relative" name="3"></div>
+      
+            <!-- Satz 5 -->
+            <h4 class="folder-heading"></h4>
+            <div class="folder-image loading" style="position:relative" name="4"></div>
+      
+            <!-- Satz 6 -->
+            <h4 class="folder-heading"></h4>
+            <div class="folder-image loading" style="position:relative" name="5"></div>
+      
+            <!-- Satz 7 -->
+            <h4 class="folder-heading"></h4>
+            <div class="folder-image loading" style="position:relative" name="6"></div>
+      
+            <!-- Satz 8 -->
+            <h4 class="folder-heading"></h4>
+            <div class="folder-image loading" style="position:relative" name="7"></div>
+      
+            <!-- Satz 9 -->
+            <h4 class="folder-heading"></h4>
+            <div class="folder-image loading" style="position:relative" name="8"></div>
+      
+            <!-- Satz 10 -->
+            <h4 class="folder-heading"></h4>
+            <div class="folder-image loading" style="position:relative" name="9"></div>
+          </div>
+        </div>
+      </div>
+ </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/intro.min.js"></script>
+
+</body>
+</div>
+</html>
